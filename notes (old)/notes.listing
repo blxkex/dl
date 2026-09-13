@@ -1,0 +1,5 @@
+def BCE_Loss(y_true, y_pred):
+    if y_true == 1:
+        return -log(y_pred)
+    else:
+        return -log(1 - y_pred)
